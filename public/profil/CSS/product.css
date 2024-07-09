@@ -1,0 +1,157 @@
+:root {
+    --primary: #2e4121;
+    --secondary: #405630;
+    --font-primary: 'Be Vietnam Pro', sans-serif;
+    --font-secondary: 'Julius Sans One', sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font-primary);
+    font-weight: 300;
+    background-color: #E9E9E9;
+    color: #000;
+    /* min-height: 2000px; */
+  }
+  
+  /* Hero Section */
+  .hero {
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .hero::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    background: linear-gradient(
+      0deg,
+      rgba(1, 1, 3, 1) 8%,
+      rgba(255, 255, 255, 0) 30%
+    );
+  }
+  .hero .content {
+    text-align: center;
+    padding: 1.4rem 7%;
+    z-index: 1;
+  }
+  .hero .content h1 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    line-height: 1;
+    color: #fff;
+  }
+  .hero .content p {
+    font-family: var(--font-secondary);
+    font-size: 3rem;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    line-height: 1;
+    color: #fff;
+  }
+  /* Hero Section End*/
+
+  /* product card start */
+  .product {
+    padding: 50px 20px;
+    }
+    .product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 0 0 auto;
+    position: relative;
+    }
+    .product-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  
+    .product-card .card-body {
+      flex-grow: 1;
+      padding: 1rem;
+  
+    }
+     /* Media Queries */
+  
+    /* Large screens (above 1200px) */
+    @media (min-width: 1200px) {
+      .product-card {
+        width: 100%;
+        margin: 1%;
+      }
+      .product .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+  }
+  
+  /* Medium to large screens (between 768px and 1200px) */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .product-card {
+      width: 100%;
+      margin: 1%;
+    }
+    .product .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  /* Tablet */
+  @media (max-width: 768px) {
+    .product-card {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+    .product .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 450px) {
+    .product {
+      padding: 20px 10px;
+    }
+    .product-card {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+    .product .row {
+      flex-direction: column;
+      align-items: center;
+    }
+    .product-card img {
+      height: auto;
+    }
+  }
+  /* product card end */

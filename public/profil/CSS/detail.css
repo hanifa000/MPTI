@@ -1,0 +1,218 @@
+:root {
+  --primary: #2e4121;
+  --secondary: #405630;
+  --font-primary: 'Be Vietnam Pro', sans-serif;
+  --font-secondary: 'Julius Sans One', sans-serif;
+}
+
+* {
+  margin: 0;
+  /* padding: 0; */
+  /* box-sizing: border-box; */
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-weight: 300;
+  background-color: #E9E9E9;
+  color: #000;
+  /* min-height: 2000px; */
+}
+
+/* produk start */
+.product {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.product-display {
+  padding: 50px 20px;
+  display: flex;
+  margin-top: 20px;
+  position: relative; 
+  min-height: 500px; 
+}
+
+.main-image {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: fit-content; 
+  z-index: 1;
+  margin-right: 40px;
+}
+
+.main-image img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbnails img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.thumbnails img:hover {
+  border-color: #333;
+}
+
+.product-details {
+  max-width: 700px;
+  flex: 1;
+}
+
+.product-details h2 {
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.product-details p {
+  margin: 0.5rem 0;
+}
+
+.product-details .add-to-cart {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #198754;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-color: #198754;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.product-details .add-to-cart:hover {
+  color: #fff;
+  background-color: #198754;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+.description label {
+  display: block;
+  margin-bottom: 5px;
+}
+.description p {
+  margin-bottom: 10px;
+  /* font-size: 12px; */
+}
+
+.options p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.option-buttons {
+  display: flex;
+  /* justify-content: center; */
+  gap: 10px;
+}
+.option-button {
+  padding: 10px 20px;
+  border: 1px solid #198754;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+.option-button.selected {
+  background-color: #198754;
+  color: white;
+}
+.option-button:hover {
+  background-color: #ddd;
+}
+
+/* Media Queries */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet Landscape & Portrait */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  .product {
+      padding: 50px 5%; 
+  }
+  .product-display {
+      flex-direction: column; 
+  }
+  .main-image {
+      position: static; 
+      margin-right: 0; 
+      margin-bottom: 20px; 
+  }
+  .main-image img {
+      width: 100%; 
+      max-width: none; 
+      /* height: auto; */
+      object-fit: cover;
+  }
+  .thumbnails {
+      gap: 10px; 
+  }
+  .thumbnails img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+  }
+  .product-details {
+      max-width: 100%; 
+  }
+}
+
+/* Mobile Landscape & Portrait */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+  .product {
+      padding: 30px 5%; 
+  }
+  .main-image {
+      margin-bottom: 20px; 
+  }
+  .thumbnails {
+      gap: 5px; 
+  }
+  .thumbnails img {
+      width: 50px; 
+      height: 60px;
+      object-fit: cover;
+  }
+  .product-details {
+      max-width: 100%; 
+  }
+}
