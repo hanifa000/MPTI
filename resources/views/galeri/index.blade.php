@@ -145,11 +145,10 @@
 
                                                 <td>
                                                     <a href="{{ route('album.edit', $gambar->id) }}" class="btn btn-primary btn-sm">Edit</a>
-                                                    <form action="{{ route('album.destroy', $gambar->id) }}" method="POST"type="submit" class="btn btn-danger btn-sm"
-                                                        onsubmit="return confirm('Anda yakin ingin menghapus data?')">
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        Delete
+                                                    <form action="{{ route('album.destroy', $gambar->id) }}" method="POST" onsubmit="return confirm('Anda yakin ingin menghapus data?')" style="display:inline;">
+                                                            @csrf
+                                                            @method('DELETE')
+                                                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                                                     </form>
                                                 </td>
                                             </tr>

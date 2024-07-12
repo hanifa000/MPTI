@@ -137,11 +137,10 @@
                                                 <td>{{$pesan -> msg}}</td>
                                                 <td>
                                                     <a href="{{ route('pesan.edit', $pesan->id) }}" class="btn btn-primary btn-sm">Edit</a>
-                                                    <form action="{{ route('pesan.destroy', $pesan->id) }}" method="POST"type="submit" class="btn btn-danger btn-sm"
-                                                        onsubmit="return confirm('Anda yakin ingin menghapus data?')">
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        Delete
+                                                    <form action="{{ route('pesan.destroy', $pesan->id) }}" method="POST" onsubmit="return confirm('Anda yakin ingin menghapus data?')" style="display:inline;">
+                                                            @csrf
+                                                            @method('DELETE')
+                                                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                                                     </form>
                                                 </td>
                                             </tr>

@@ -135,11 +135,10 @@
                                                 <td><img src="{{ asset('foto_qris/' . $qris->foto) }}" alt="foto_produk" width="100"></td>
                                                 <td>
                                                     <a href="{{ route('qris.edit', $qris->id) }}" class="btn btn-primary btn-sm">Edit</a>
-                                                    <form action="{{ route('qris.destroy', $qris->id) }}" method="POST"type="submit" class="btn btn-danger btn-sm"
-                                                        onsubmit="return confirm('Anda yakin ingin menghapus data?')">
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        Delete
+                                                    <form action="{{ route('qris.destroy', $qris->id) }}" method="POST" onsubmit="return confirm('Anda yakin ingin menghapus data?')" style="display:inline;">
+                                                            @csrf
+                                                            @method('DELETE')
+                                                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                                                     </form>
                                                 </td>
                                             </tr>

@@ -160,12 +160,13 @@
                                                         <a href="{{ route('buy.show', $item->id) }}" class="btn btn-light btn-sm">Detail</a>
                                                         <a href="{{ route('buy.edit', $item->id) }}" class="btn btn-primary btn-sm">Edit</a>
 
-                                                        <form action="{{ route('buy.destroy', $item->id) }}" method="POST" type="button" class="btn btn-danger btn-sm" onsubmit="return confirm('Anda yakin ingin menghapus data?')">
+                                                        <form action="{{ route('buy.destroy', $item->id) }}" method="POST" onsubmit="return confirm('Anda yakin ingin menghapus data?')" style="display:inline;">
                                                             @csrf
                                                             @method('DELETE')
-                                                            Delete
+                                                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                                                         </form>
                                                     </td>
+
                                                 </tr>
                                             @endforeach
                                         </tbody>
