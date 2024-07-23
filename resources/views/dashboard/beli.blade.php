@@ -103,8 +103,8 @@
                                 <label for="produk">Pilih Produk</label>
                                 <select name="produk" class="form-select" id="produk" required>
                                     <option value="" disabled selected>Pilih Produk</option>
-                                    <option value="premium-1">Kit DIY Terrarium Tipe Spesial Edition (Rp. 100.000)</option>
-                                    <option value="premium-2">Kit DIY Terrarium Tipe Spesial Edition Tanpa Wadah Kaca (Rp. 90.000)</option>
+                                    <option value="spesial-1">Kit DIY Terrarium Tipe Spesial Edition (Rp. 100.000)</option>
+                                    <option value="spesial-2">Kit DIY Terrarium Tipe Spesial Edition Tanpa Wadah Kaca (Rp. 90.000)</option>
                                     <option value="premium-1">Kit DIY Terrarium Tipe Premium (Rp. 75.000)</option>
                                     <option value="premium-2">Kit DIY Terrarium Tipe Premium Tanpa Wadah Kaca (Rp. 65.000)</option>
                                     <option value="medium-1">Kit DIY Terrarium Tipe Medium (Rp. 50.000)</option>

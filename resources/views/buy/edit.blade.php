@@ -55,13 +55,14 @@
                             <div class="form-group mb-3">
                                 <label for="produk">Pilih Produk</label>
                                 <select class="form-select" id="produk" name="produk" required>
-                                    <option value="premium-1" {{ $buy->produk == 'premium-1' ? 'selected' : '' }}>Set DIY Terrarium Tipe Premium dengan Wadah Fishbowl (Rp. 85.000,-)</option>
-                                    <option value="premium-2" {{ $buy->produk == 'premium-2' ? 'selected' : '' }}>Set DIY Terrarium Tipe Premium dengan Wadah Fishbowl Versi 2 (Rp. 80.000,-)</option>
-                                    <option value="medium-1" {{ $buy->produk == 'medium-1' ? 'selected' : '' }}>Set DIY Terrarium Tipe Medium dengan Bell Jar (Rp. 50.000,-)</option>
-                                    <option value="medium-2" {{ $buy->produk == 'medium-2' ? 'selected' : '' }}>Set DIY Terrarium Tipe Medium dengan Wadah Cylinder Glass Jar (Rp. 50.000,-)</option>
-                                    <option value="medium-3" {{ $buy->produk == 'medium-3' ? 'selected' : '' }}>Set DIY Terrarium Tipe Medium dengan Wadah Fishbowl (Rp. 50.000,-)</option>
-                                    <option value="standard-1" {{ $buy->produk == 'standard-1' ? 'selected' : '' }}>Set DIY Terrarium Tipe Standar dengan Hexagonal glass jar (Rp. 30.000,-)</option>
-                                    <option value="standard-2" {{ $buy->produk == 'standard-2' ? 'selected' : '' }}>Set DIY Terrarium Tipe Standar dengan Cylinder Glass Vase (Rp. 30.000,-)</option>
+                                    <option value="spesial-1" {{ $buy->produk == 'premium-1' ? 'selected' : '' }}>Kit DIY Terrarium Tipe Spesial Edition (Rp. 100.000)</option>
+                                    <option value="spesial-2" {{ $buy->produk == 'premium-1' ? 'selected' : '' }}>Kit DIY Terrarium Tipe Spesial Edition Tanpa Wadah Kaca (Rp. 90.000)</option>
+                                    <option value="premium-1" {{ $buy->produk == 'premium-2' ? 'selected' : '' }}>Kit DIY Terrarium Tipe Premium (Rp. 75.000)</option>
+                                    <option value="premium-2" {{ $buy->produk == 'medium-1' ? 'selected' : '' }}>Kit DIY Terrarium Tipe Premium Tanpa Wadah Kaca (Rp. 65.000)</option>
+                                    <option value="medium-1" {{ $buy->produk == 'medium-2' ? 'selected' : '' }}>Kit DIY Terrarium Tipe Medium (Rp. 50.000)</option>
+                                    <option value="medium-2" {{ $buy->produk == 'medium-3' ? 'selected' : '' }}>Kit DIY Terrarium Tipe Medium Tanpa Wadah Kaca (Rp. 40.000)</option>
+                                    <option value="standard-1" {{ $buy->produk == 'standard-1' ? 'selected' : '' }}>Kit DIY Terrarium Tipe Standard (Rp. 25.000)</option>
+                                    <option value="standard-2" {{ $buy->produk == 'standard-2' ? 'selected' : '' }}>Kit DIY Terrarium Tipe Standard Tanpa Wadah Kaca (Rp. 20.000)</option>
                                 </select>
                             </div>
                             <div class="form-group mb-3">
@@ -77,8 +78,9 @@
                                     </div>
                                 @endif
                             </div>
+                            <p style="font-size: small; text-align:left;"><em>*Periksa sebelum submit, jika ingin edit pembelian harap edit foto bukti juga!</em></p>
                             <button type="submit" class="btn btn-primary me-2">Submit</button>
-                            <a href="{{ route('buy.index') }}" class="btn btn-light">Kembali</a>
+                            <a href="{{ route('buy.index') }}" class="btn btn-light">Cancel</a>
                         </form>
                     </div>
                 </div>

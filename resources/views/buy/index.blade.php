@@ -138,18 +138,22 @@
                                                     <td>{{ $item->alamat }}</td>
                                                     <td>{{ $item->telp }}</td>
                                                     <td>
-                                                        @if ($item->produk == 'premium-1')
-                                                        Kit DIY Terrarium Tipe Premium (Rp. 85.000)
+                                                        @if ($item->produk == 'spesial-1')
+                                                        Kit DIY Terrarium Tipe Spesial Edition (Rp. 100.000)
+                                                        @elseif ($item->produk == 'spesial-2')
+                                                        Kit DIY Terrarium Tipe Spesial Edition Tanpa Wadah Kaca (Rp. 90.000)
+                                                        @elseif ($item->produk == 'premium-1')
+                                                        Kit DIY Terrarium Tipe Premium (Rp. 75.000)
                                                         @elseif ($item->produk == 'premium-2')
-                                                        Kit DIY Terrarium Tipe Premium Tanpa wadah kaca (Rp. 85.000)
+                                                        Kit DIY Terrarium Tipe Premium Tanpa Wadah Kaca (Rp. 65.000)
                                                         @elseif ($item->produk == 'medium-1')
-                                                        Kit DIY Terrarium Tipe Medium (Rp. 70.000)
+                                                        Kit DIY Terrarium Tipe Medium (Rp. 50.000)
                                                         @elseif ($item->produk == 'medium-2')
-                                                        Kit DIY Terrarium Tipe Medium Tanpa wadah kaca (Rp. 70.000)
+                                                        Kit DIY Terrarium Tipe Medium Tanpa Wadah Kaca (Rp. 40.000)
                                                         @elseif ($item->produk == 'standard-1')
-                                                        Kit DIY Terrarium Tipe Standard (Rp. 50.000)
+                                                        Kit DIY Terrarium Tipe Standard (Rp. 25.000)
                                                         @elseif ($item->produk == 'standard-2')
-                                                        Kit DIY Terrarium Tipe Standard Tanpa wadah kaca (Rp. 50.000)
+                                                        Kit DIY Terrarium Tipe Standard Tanpa Wadah Kaca (Rp. 20.000)
                                                         @endif
                                                     </td>                                                    
                                                     <td>{{ $item->jumlah }}</td>
